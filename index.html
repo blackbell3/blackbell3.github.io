@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Briana Johnson</title>
+
+  <link rel="icon" type="image/png" href="sailogo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="matrix.js"></script>
+</head>
+<body>
+  <canvas id="matrixCanvas"></canvas>
+
+  <header class="header">
+    <a href="#" class="logo">{Portfolio}</a>
+    <nav class="navbar">
+      <a href="#home" style="--i:1;" class="active">Home</a>
+      <a href="#about" style="--i:2;">About</a>
+      <a href="#skill" style="--i:3;">Skills</a>
+      <a href="#project" style="--i:4;">Projects</a>
+      <a href="#contact" style="--i:5;">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="home-content" data-scroll data-scroll-speed="-5">
+      <h3 class="mu">Hello, it's me</h3>
+      <h1>Briana Johnson</h1>
+      <h3>And I'm a <span class="pro-text"></span></h3>
+
+      <script>
+        var typed = new Typed(".pro-text", {
+          strings: [
+            "iOS App Signer",
+            "Reverse Engineer",
+            "Web Modder",
+            "Cybersecurity Learner",
+            "Tech Tinkerer",
+            "Future Software Engineer"
+          ],
+          typeSpeed: 100,
+          backSpeed: 100,
+          backDelay: 1000,
+          loop: true
+        });
+      </script>
+
+      <p>
+        &emsp; &emsp;I specialize in iOS provisioning, certificate signing, and IPA handling — including JIT activation, AppDB workflows, and ESign deployment.  
+        <br /><br />
+        &emsp; &emsp;In middle school, I reverse-engineered game websites to build a custom unblocked game portal using Google Sites, bypassing school restrictions entirely.  
+        <br /><br />
+        &emsp; &emsp;Now I independently manage developer accounts, troubleshoot Apple signing errors, and maintain full control over sideloaded apps using custom certs and profiles.
+      </p>
+
+      <div class="home-sci">
+        <a href="https://github.com/yourusername" target="_blank"><i class='bx bxl-github'></i></a>
+      </div>
+
+      <a href="#" class="btn-box">No CV. Just Skills.</a>
+    </div>
+
+    <div class="home-img">
+      <div class="glowing-circle">
+        <span></span>
+        <span></span>
+        <div class="image">
+          <img src="saianon.png" alt=""/>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
